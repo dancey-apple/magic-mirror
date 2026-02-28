@@ -1,0 +1,47 @@
+<div class="headerContainer weekGrid">
+	<div class="weekday weekday_0 weekend weekend_2">Sunday</div>
+	<div class="weekday weekday_1">Monday</div>
+	<div class="weekday weekday_2">Tuesday</div>
+	<div class="weekday weekday_3">Wednesday</div>
+	<div class="weekday weekday_4">Thursday</div>
+	<div class="weekday weekday_5">Friday</div>
+	<div class="weekday weekday_6 weekend weekend_1">Saturday</div></div>
+	
+<div class="cw cwFirst">23</div>
+
+<div class="event calendar_Family future singleday" data-calendar-seq="0" data-calendar-name="Family" data-color="red" data-description="" data-title="Father's day softball" data-full-day-event="false" data-geo="false" data-location="" data-start-date="1749999600000" data-end-date="1750006800000" data-today="false" data-symbol="fas fa-fw fa-hamsa" style="--calendarColor: red; --oppositeColor: white; grid-column: 1 / 2;" id="0_1749999600000_1750006800000_1749775150767" data-popoverble="true">
+	<div class="headline useSymbol">
+		<span class="symbol"><span class="fas fa-fw fa-hamsa"></span></span>
+		<div class="time startTime notInDay">
+			<span class="eventTimeParts hour seq_0">10</span>
+			<span class="eventTimeParts literal seq_1">:</span>
+			<span class="eventTimeParts minute seq_2">00</span>
+			<span class="eventTimeParts literal seq_3"> </span>
+			<span class="eventTimeParts dayPeriod seq_4">AM</span>
+		</div>
+		<div class="time endTime notInDay">
+			<span class="eventTimeParts hour seq_0">12</span>
+			<span class="eventTimeParts literal seq_1">:</span>
+			<span class="eventTimeParts minute seq_2">00</span>
+			<span class="eventTimeParts literal seq_3"> </span>
+			<span class="eventTimeParts dayPeriod seq_4">PM</span>
+		</div>
+		<div class="title">Father's day softball</div>
+	</div>
+	<div class="description"></div>
+	<div class="location"></div></div>
+	
+<div id="module_4_clock" class="module clock" style="transition: opacity 50s; position: static; opacity: 1;">
+	<header class="module-header" style="display: none;">undefined</header>
+		<div class="module-content"><div class="clock-grid">
+			<div class="digital">
+				<div class="date normal medium">Thursday, June 12, 2025</div>
+				<div class="time bright large light">
+					<span class="clock-hour-digital">8</span>:<span class="clock-minute-digital">46</span>
+					<sup class="clock-second-digital dimmed">48</sup>
+					<span>pm</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

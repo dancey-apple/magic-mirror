@@ -1,0 +1,177 @@
+:root {
+  --color-text: #00FFFF;
+  --color-text-dimmed: #008B8B;
+  --color-text-bright: #CCFFFF;
+  --color-background: #000;
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto";
+  --font-size: 30px;
+  --font-size-xsmall: 0.75rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.5rem;
+  --font-size-large: 3.25rem;
+  --font-size-xlarge: 3.75rem;
+  --gap-body-top: 60px;
+  --gap-body-right: 60px;
+  --gap-body-bottom: 60px;
+  --gap-body-left: 60px;
+  --gap-modules: 30px;
+}
+
+/* -----------------------------
+   MMM-CalendarExt3
+------------------------------ */
+.MMM-CalendarExt3{
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 20px !important;
+  color: cyan !important;
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.MMM-CalendarExt3 .weekday.weekday_0,
+.MMM-CalendarExt3 .weekday.weekday_6 {
+  color: #FFFFFF !important;
+}
+
+.MMM-CalendarExt3 .event .title {
+  font-size: 22px !important;
+  font-weight: bold;
+}
+
+.MMM-CalendarExt3 .event .symbol {
+  font-size: 20px !important;
+  color: #CCFFFF;
+}
+
+.MMM-CalendarExt3 .event .eventTimeParts {
+  font-size: 23px !important;
+  color: #00FFFF;
+}
+
+.MMM-CalendarExt3 .module-header {
+  font-size: 28px;
+}
+
+.MMM-CalendarExt3 .cellDate {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+/* -----------------------------
+   MMM-MealSuggestions (CORRECTED)
+   NOTE: This overrides module css,
+   so it must be correct here.
+------------------------------ */
+
+/* Grid for 6 cards: 3 columns x 2 rows */
+.MMM-MealSuggestions .recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Card */
+.MMM-MealSuggestions .meal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 300px;
+  padding: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Reserve image space so title always shows */
+.MMM-MealSuggestions .meal-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.MMM-MealSuggestions .meal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* switch to contain if you prefer */
+  display: block;
+}
+
+/* Title: bright + readable at distance */
+.MMM-MealSuggestions .meal-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+
+  color: var(--color-text-bright);
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.35);
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Hover - keep subtle to avoid reflow in small regions */
+.MMM-MealSuggestions .meal-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Optional: button styling (only if you want it themed) */
+.MMM-MealSuggestions #refresh-meals {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--color-text-bright);
+}
+
+.MMM-MealSuggestions #refresh-meals:hover {
+  border-color: rgba(0, 255, 255, 0.65);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Info text (if it appears) */
+.MMM-MealSuggestions .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 18px;
+  color: var(--color-text-dimmed);
+}
+
+/* -----------------------------
+   General module panel styling
+------------------------------ */
+.clock,
+.calendar,
+.weather,
+.newsfeed,
+.compliments,
+.MMM-Pinfo,
+.MMM-MyScoreboard,
+.MMM-MealSuggestions {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.MMM-Pinfo .item {
+  font-size: 20px;
+}

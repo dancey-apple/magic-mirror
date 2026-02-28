@@ -57,20 +57,19 @@ Temporary Items
 .directory
 .Trash-*
 
-# Ignore all modules except the default modules.
+# modules.
 /modules/**
 !/modules/default
 !/modules/default/**
 !/modules/README.md**
-
-# Ignore changes to the custom css files but keep the sample and main.
-/css/*
-!/css/custom.css.sample
-!/css/main.css
-
-# Ignore users config file but keep the sample.
-/config/*
-!/config/config.js.sample
+!/modules/MMM-BackgroundSlideshow/**
+!/modules/MMM-CalendarExt3/**
+!/modules/MMM-Cursor/**
+!/modules/MMM-MyScoreboard/**
+!/modules/MMM-OnScreenMenu/**
+!/modules/MMM-page-indicator/**
+!/modules/MMM-pages/**
+!/modules/MMM-Pinfo/**
 
 # Vim
 ## swap
@@ -82,5 +81,5 @@ Temporary Items
 *.rej
 *.bak
 
-# Ignore positions file (#3518)
-js/positions.js
+#ignore google API Token
+config/googleDriveApiTokens.txt
