@@ -58,7 +58,10 @@ Temporary Items
 .Trash-*
 
 # modules.
-/modules/**
+/modules/MMM-MealSuggestions
+/modules/MMM-MicrosoftToDo
+/modules/MMM-Todoist2
+/modules/MMM-Remote-Control
 !/modules/default
 !/modules/default/**
 !/modules/README.md**
