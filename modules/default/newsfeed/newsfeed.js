@@ -6,7 +6,12 @@ Module.register("newsfeed", {
 				title: "New York Times",
 				url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
 				encoding: "UTF-8" //ISO-8859-1
-			}
+			},
+			{
+				title: "NPR",
+				url: "https://feeds.npr.org/1001/rss.xml",
+				ecoding: "UTF-8"
+			},
 		],
 		showAsList: false,
 		showSourceTitle: true,
